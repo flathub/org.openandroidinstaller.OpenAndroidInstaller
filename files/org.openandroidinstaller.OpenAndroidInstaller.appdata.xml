@@ -33,6 +33,34 @@
   </screenshots>
 
   <releases>
+    <release version="v0.4.3-beta" date="2023-05-21" urgency="medium">
+      <description>
+        <p>Flatpak Changes:
+	   - Logs are now stored in ~/.var/app/org.openandroidinstaller/OpenAndroidInstaller/data
+        </p>
+        <p>This release v0.4.3-beta adds:        
+           - Support for Samsung Galaxy S4 mini (serranoltexx/serranolte) by @freechelmi
+           - Support for Samsung Galaxy Grand Prime VE (grandprimevelte) by @MagicLike
+           - Support for Samsung Galaxy S8 (dreamlte) by @allaeddineomc
+           - Allow changing the logging location by poetry run python openandroidinstaller/openandroidinstaller.py -l /logging/directory
+	   - Allow Markdown to format text content of device configs (limited markdown set)
+        </p>
+        <p>Improvements:
+           - Make the Fairphone 2 config clearer
+           - removed an unneeded reboot instructions for the FPs
+           - added the TWRP image to every config
+	   - reformatted the configs for more consistency
+        </p>
+        <p>Fixes:
+
+           - A bug where not selecting any add-on leads to a failure of the app. If no add-on is selected, now just reboot to OS at installation time.
+           - Improve the addons installer progress bars and fix issues
+           - Try wipe data if format data fails to enable the use of older TWRP versions
+           - Improve logging for the run_command function
+        </p>
+      </description>
+      <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.4.3-beta</url>
+    </release>
     <release version="v0.4.2-beta" date="2023-03-27" urgency="medium">
       <description>
         <p>This release v0.4.2-beta adds:
