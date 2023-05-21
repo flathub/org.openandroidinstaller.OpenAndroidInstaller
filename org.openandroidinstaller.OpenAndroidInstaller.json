@@ -77,7 +77,7 @@
         {
           "type": "archive",
           "url": "https://dl.google.com/android/repository/platform-tools_r34.0.1-linux.zip",
-          "sha256": "09aa9346b7c61adbf79f15378cbd61666899a20678b8cb9872f078c38fe3833f"
+          "sha256": "c72bba58d99103abd4931b5a5d75146047b35e498092b6f03b6db3f5b07afc51"
         }
       ],
       "build-commands": [
@@ -105,8 +105,8 @@
 	"sources": [
 	    {
                 "type": "archive",
-		"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.4.2-beta.tar.gz",
-		"sha256": "460e33ead3476d56e847ba0e0fe1686e55363754fa19f3e45f995caa3e6b3439"
+		"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.4.3-beta.tar.gz",
+		"sha256": "07063c7bd2f7ebc295dfcdc1db7d72de83adcb52fb0eec214337fa54b3bba7bb"
             },
 	    {
 	        "type": "file",
@@ -116,7 +116,7 @@
 	    {
 	        "type": "script",
 		"commands": [
-		    "python3 /app/lib/python3.10/site-packages/openandroidinstaller/openandroidinstaller.py"
+		    "python3 /app/lib/python3.10/site-packages/openandroidinstaller/openandroidinstaller.py -l ~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/"
 		],
 		"dest-filename": "openandroidinstaller.sh"
 	    },
