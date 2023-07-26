@@ -105,8 +105,8 @@
 	"sources": [
 	    {
                 "type": "archive",
-		"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/download/v0.4.4-beta/openandroidinstaller-v0.4.4-beta-ubuntu-latest.zip",
-		"sha256": "e5154aba55366c04e65c5d51722f03bb6dda28912221a9cb1e945061b1f29c3b"
+		"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.4.4-beta.tar.gz",
+		"sha256": "e047963800c404d450f1e6c63851651bb5d0a733bd9a50b882c76412858ced4b"
             },
 	    {
 	        "type": "file",
