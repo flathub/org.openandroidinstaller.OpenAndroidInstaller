@@ -3,7 +3,7 @@
   <id>org.openandroidinstaller.OpenAndroidInstaller</id>
   
   <name>OpenAndroidInstaller</name>
-  <summary> Makes installing alternative Android distributions nice and easy. </summary>
+  <summary>Makes installing alternative Android distributions nice and easy</summary>
   <url type="homepage">https://openandroidinstaller.org/</url>
   <url type="bugtracker">https://github.com/openandroidinstaller-dev/openandroidinstaller/issues</url>
   <url type="help">https://openandroidinstaller.org/faq.html</url>
