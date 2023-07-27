@@ -34,19 +34,24 @@
 
   <releases>
     <release version="v0.4.4-beta" date="2023-05-26" urgency="medium">
-        <p>This release v0.4.4-beta adds:
-            - support for Samsung A5 2017 (a5y17lte) thanks to @Gredin67
-            - support for device code beyond2 for Samsung Galaxy S10+.
-            - support for device code evert_n for Motorola Moto G6 plus.
-            - support for Samsung Tab S2 gts210vewifi T813 thanks to @freechelmi
-            - a "request support for device" button if no config for the device code is found
+      <description>
+        <p>This release v0.4.4-beta adds:</p>
+        <ul>
+          <li>support for Samsung A5 2017 (a5y17lte) thanks to @Gredin67</li>
+          <li>support for device code beyond2 for Samsung Galaxy S10+.</li>
+          <li>support for device code evert_n for Motorola Moto G6 plus.</li>
+          <li>support for Samsung Tab S2 gts210vewifi T813 thanks to @freechelmi</li>
+          <li>a "request support for device" button if no config for the device code is found</li>
+        </ul>
+        <p>Improvements:</p>
+        <ul>
+          <li>Set a min width/height for the window to solve basic responsiveness issues.</li>
+        </ul>
         </p>
-        <p>Improvements:
-           - Set a min width/height for the window to solve basic responsiveness issues.
-        </p>
-        <p>Fixes:
-           - Update the unlocking instructions for FP3/4 and add fastboot_unlock_critical command.
-        </p>
+        <p>Fixes:</p>
+        <ul>
+          <li>Update the unlocking instructions for FP3/4 and add fastboot_unlock_critical command.</li>
+        </ul>
       </description>
       <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.4.4-beta</url>
     </release>
