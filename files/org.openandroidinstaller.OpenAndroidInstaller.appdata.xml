@@ -47,7 +47,6 @@
         <ul>
           <li>Set a min width/height for the window to solve basic responsiveness issues.</li>
         </ul>
-        </p>
         <p>Fixes:</p>
         <ul>
           <li>Update the unlocking instructions for FP3/4 and add fastboot_unlock_critical command.</li>
