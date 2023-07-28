@@ -24,19 +24,11 @@
   <screenshots>
     <screenshot type="default">
       <caption>Startup page</caption>
-      <image>https://raw.githubusercontent.com/flathub/org.openandroidinstaller.OpenAndroidInstaller/master/files/screenshot_01-welcome-view-0.4.4-beta.png</image>
+      <image>https://raw.githubusercontent.com/axtloss/openandroidinstaller/axtloss/flatpak-build/flatpak/OpenAndroidInstaller_Screenshot1.png</image>
     </screenshot>
     <screenshot type="default">
       <caption>First step of the flashing progress</caption>
-      <image>https://raw.githubusercontent.com/flathub/org.openandroidinstaller.OpenAndroidInstaller/master/files/screenshot_02-get-ready-view-0.4.4-beta.png</image>
-    </screenshot>
-    <screenshot type="default">
-      <caption>Screen that shows the requirements for the process</caption>
-      <image>https://raw.githubusercontent.com/flathub/org.openandroidinstaller.OpenAndroidInstaller/master/files/screenshot_03-requirements-view-0.4.4-beta.png</image>
-    </screenshot>
-    <screenshot type="default">
-      <caption>Select the OS you want to install</caption>
-      <image>https://raw.githubusercontent.com/flathub/org.openandroidinstaller.OpenAndroidInstaller/master/files/screenshot_04-image-selection-view-0.4.4-beta.png</image>
+      <image>https://raw.githubusercontent.com/axtloss/openandroidinstaller/axtloss/flatpak-build/flatpak/OpenAndroidInstaller_Screenshot2.png</image>
     </screenshot>
   </screenshots>
 
