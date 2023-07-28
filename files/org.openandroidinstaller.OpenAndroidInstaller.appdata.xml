@@ -3,7 +3,7 @@
   <id>org.openandroidinstaller.OpenAndroidInstaller</id>
   
   <name>OpenAndroidInstaller</name>
-  <summary> Makes installing alternative Android distributions nice and easy. </summary>
+  <summary>Makes installing alternative Android distributions nice and easy</summary>
   <url type="homepage">https://openandroidinstaller.org/</url>
   <url type="bugtracker">https://github.com/openandroidinstaller-dev/openandroidinstaller/issues</url>
   <url type="help">https://openandroidinstaller.org/faq.html</url>
@@ -24,15 +24,44 @@
   <screenshots>
     <screenshot type="default">
       <caption>Startup page</caption>
-      <image>https://raw.githubusercontent.com/axtloss/openandroidinstaller/axtloss/flatpak-build/flatpak/OpenAndroidInstaller_Screenshot1.png</image>
+      <image>https://raw.githubusercontent.com/flathub/org.openandroidinstaller.OpenAndroidInstaller/master/files/screenshot_01-welcome-view-0.4.4-beta.png</image>
     </screenshot>
     <screenshot type="default">
       <caption>First step of the flashing progress</caption>
-      <image>https://raw.githubusercontent.com/axtloss/openandroidinstaller/axtloss/flatpak-build/flatpak/OpenAndroidInstaller_Screenshot2.png</image>
+      <image>https://raw.githubusercontent.com/flathub/org.openandroidinstaller.OpenAndroidInstaller/master/files/screenshot_02-get-ready-view-0.4.4-beta.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <caption>Screen that shows the requirements for the process</caption>
+      <image>https://raw.githubusercontent.com/flathub/org.openandroidinstaller.OpenAndroidInstaller/master/files/screenshot_03-requirements-view-0.4.4-beta.png</image>
+    </screenshot>
+    <screenshot type="default">
+      <caption>Select the OS you want to install</caption>
+      <image>https://raw.githubusercontent.com/flathub/org.openandroidinstaller.OpenAndroidInstaller/master/files/screenshot_04-image-selection-view-0.4.4-beta.png</image>
     </screenshot>
   </screenshots>
 
   <releases>
+    <release version="v0.4.4-beta" date="2023-07-26" urgency="medium">
+      <description>
+        <p>This release v0.4.4-beta adds:</p>
+        <ul>
+          <li>support for Samsung A5 2017 (a5y17lte) thanks to @Gredin67</li>
+          <li>support for device code beyond2 for Samsung Galaxy S10+.</li>
+          <li>support for device code evert_n for Motorola Moto G6 plus.</li>
+          <li>support for Samsung Tab S2 gts210vewifi T813 thanks to @freechelmi</li>
+          <li>a "request support for device" button if no config for the device code is found</li>
+        </ul>
+        <p>Improvements:</p>
+        <ul>
+          <li>Set a min width/height for the window to solve basic responsiveness issues.</li>
+        </ul>
+        <p>Fixes:</p>
+        <ul>
+          <li>Update the unlocking instructions for FP3/4 and add fastboot_unlock_critical command.</li>
+        </ul>
+      </description>
+      <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.4.4-beta</url>
+    </release>
     <release version="v0.4.3-beta" date="2023-05-21" urgency="medium">
       <description>
         <p>Flatpak Changes:
