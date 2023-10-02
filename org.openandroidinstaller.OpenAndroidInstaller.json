@@ -105,8 +105,8 @@
 	"sources": [
 	    {
                 "type": "archive",
-		"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.4.4-beta.tar.gz",
-		"sha256": "e047963800c404d450f1e6c63851651bb5d0a733bd9a50b882c76412858ced4b"
+		"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.5.0-beta.tar.gz",
+		"sha256": "79b052d002eb0d396fa01b2c6e37320b14f15ff38cfbd562a6047c9910a5fca5"
             },
 	    {
 	        "type": "file",
