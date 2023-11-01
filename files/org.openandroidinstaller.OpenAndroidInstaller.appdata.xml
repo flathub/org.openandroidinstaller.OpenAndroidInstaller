@@ -33,6 +33,35 @@
   </screenshots>
 
   <releases>
+    <release version="v0.5.1-beta" date="2023-11-01" urgency="medium">
+      <description>
+        <p>This release v0.5.1-beta adds:</p>
+        <ul>
+          <li>Actions for releases are upgraded (by @MagicLike)</li>
+          <li>Reworked the device request template as a form (by @MagicLike)</li>
+          <li>Updated bootloader unlock info (by @freechelmi)</li>
+        </ul>
+        <p>New devices:</p>
+        <ul>
+          <li>Support for begonia (Xiaomi Redmi Note 8 Pro) (thanks to @anon1892)</li>
+          <li>Support for on7xelte (Samsung Galaxy J7 Prime) (thanks to @MagicLike)</li>
+          <li>Support for a7y17lte (Samsung Galaxy A7 2017) (thanks to @SirRGB)</li>
+          <li>Support for jfltexx (Samsung Galaxy S4) (thanks to @MagicLike)</li>
+          <li>Support for dipper (Xiaomi Mi 8) (thanks to @anon1892)</li>
+          <li>Support for surya/karna (Poco X3 - X3 NFC) (thanks to @anon1892)</li>
+          <li>Support for alioth (Redmi K40 / Mi 11X / Poco F3) (thanks to @anon1892)</li>
+          <li>New device code variant to j7elte & added TWRP link (thanks to @MagicLike)</li>
+        </ul>
+        <p>Other improvements:</p>
+        <ul>
+          <li>Updates for some OnePlus and Pixel configs with make use of the flashing of additional partitions if needed for Android 13</li>
+          <li>A requirement checkbox to encourage booting stock OS at least once</li>
+          <li>Migrate xda developers link to a new URL</li>
+          <li>Misc docs and minor config corrections/additions (thanks to @SirRGB)</li>
+        </ul> 
+      </description>
+      <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.5.0-beta</url>
+    </release>
     <release version="v0.5.0-beta" date="2023-10-02" urgency="medium">
       <description>
         <p>This release v0.5.0-beta adds:</p>
