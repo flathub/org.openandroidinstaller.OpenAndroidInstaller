@@ -33,6 +33,28 @@
   </screenshots>
 
   <releases>
+    <release version="v0.5.2-beta" date="2024-01-18" urgency="medium">
+      <description>
+        <p>This release v0.5.2-beta adds:</p>
+        <ul>
+          <li>mi439 twrp name to directly resolve to twrp download</li>
+          <li>Improved documentation (thanks to <a href="https://github.com/SirRGB">@SirRGB</a>)</li>
+          <li>Improved error message for loading images (addresses <a href="https://github.com/example-repo/issue/394">#394</a> and <a href="https://github.com/example-repo/issue/354">#354</a>)</li>
+          <li>Improve behavior when rescaling the installer (addresses <a href="https://github.com/example-repo/issue/379">#379</a>)</li>
+        </ul>
+        <p>Newly supported devices:</p>
+        <ul>
+          <li>OnePlus 3/3T (oneplus3) (thanks to <a href="https://github.com/SirRGB">@SirRGB</a>)</li>
+          <li>Redmi 9 Poco M2 (lancelot) (thanks to <a href="https://github.com/anon1892">@anon1892</a>)</li>
+        </ul>
+        <p>Fixes:</p>
+        <ul>
+          <li>Bug where installer crashes when sideloading progress goes over 100%</li>
+          <li>Properly handle exceptions while processing the ROM zip file (File is not a zip file, file is a zip file but does not contain metadata file) (thanks to <a href="https://github.com/anon1892">@anon1892</a>)</li>
+        </ul>
+      </description>
+      <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.5.2-beta</url>
+    </release>
     <release version="v0.5.1-beta" date="2023-11-01" urgency="medium">
       <description>
         <p>This release v0.5.1-beta adds:</p>
