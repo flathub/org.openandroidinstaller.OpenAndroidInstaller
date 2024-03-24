@@ -105,7 +105,7 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.5.2-beta.tar.gz",
+					"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.5.3-beta.tar.gz",
 					"sha256": "04bea40e7c77deadf9b0d3bc422af328e0cb05823da43198c2815c140e4b9283"
 				},
 				{
@@ -116,7 +116,7 @@
 				{
 					"type": "script",
 					"commands": [
-						"python3 /app/lib/python3.10/site-packages/openandroidinstaller/openandroidinstaller.py -l ~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/"
+						"python3 /app/lib/python3.11/site-packages/openandroidinstaller/openandroidinstaller.py -l ~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/"
 					],
 					"dest-filename": "openandroidinstaller.sh"
 				},

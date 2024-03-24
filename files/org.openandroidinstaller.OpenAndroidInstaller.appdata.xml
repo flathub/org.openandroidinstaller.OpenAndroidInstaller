@@ -33,6 +33,28 @@
   </screenshots>
 
   <releases>
+    <release version="v0.5.3-beta" date="2024-03-24" urgency="medium">
+      <description>
+        <p>This release v0.5.3-beta adds:</p>
+        <p>New devices:</p>
+        <ul>
+            <li>support for Xiaomi Mi A2 / 6X (jasmine_sprout) (thanks to @anon1892)</li>
+            <li>support for Xiaomi Redmi Note 10 Pro (sweet) (thanks to @BjornW)</li>
+            <li>support for Samsung Galaxy S5 mini (kminilte) (thanks to @LudovicRousseau)</li>
+            <li>support more Versions of Samsung Galaxy S5 mini (thanks to @SirRGB)</li>
+        </ul>
+        <p>Fixes:</p>
+        <ul>
+          <li>Show proper error messages when bash shell is not found and try other paths.</li>
+        </ul>
+        <p>Other changes:</p>
+        <ul>
+            <li>Update to python 3.11</li>
+            <li>Support latest Android Platform Tools 35.0.1</li>
+        </ul>
+      </description>
+      <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.5.3-beta</url>
+    </release>
     <release version="v0.5.2-beta" date="2024-01-18" urgency="medium">
       <description>
         <p>This release v0.5.2-beta adds:</p>
