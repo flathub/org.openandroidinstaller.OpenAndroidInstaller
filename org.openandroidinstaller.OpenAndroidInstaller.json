@@ -110,7 +110,7 @@
 				},
 				{
 					"type": "file",
-					"url": "https://files.pythonhosted.org/packages/7d/25/f3bfda3c458d114005af99441d009936b85a34a730aeb9cf57fb2630d9f7/poetry-1.6.1-py3-none-any.whl",
+					"url": "https://files.pythonhosted.org/packages/7d/25/f3bfda3c458d114005af99441d009936b85a34a730aeb9cf57fb2630d9f7/poetry_core-1.6.1-py3-none-any.whl",
 					"sha256": "9b4cb6079c08cc0d91e8cba18a6bd4d4f7d7830263a7fb18ecb3faa77937c988"
 				},
 				{
