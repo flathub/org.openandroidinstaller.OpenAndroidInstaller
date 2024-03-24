@@ -37,6 +37,20 @@
 			]
 		},
 		{
+			"name": "wheel",
+			"buildsystem": "simple",
+			"build-commands": [
+				"pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"wheel\" --no-build-isolation"
+			],
+			"sources": [
+				{
+					"type": "file",
+					"url": "https://files.pythonhosted.org/packages/7d/cd/d7460c9a869b16c3dd4e1e403cce337df165368c71d6af229a74699622ce/wheel-0.43.0-py3-none-any.whl",
+					"sha256": "55c570405f142630c6b9f72fe09d9b67cf1477fcf543ae5b8dcb1f5b7377da81"
+				}
+			]
+		},
+		{
 			"name": "PyYAML",
 			"buildsystem": "simple",
 			"build-commands": [
