@@ -4,6 +4,9 @@
   
   <name>OpenAndroidInstaller</name>
   <summary>Makes installing alternative Android distributions nice and easy</summary>
+  <developer>
+    <name>Tobias Sterbak</name>
+  </developer>
   <url type="homepage">https://openandroidinstaller.org/</url>
   <url type="bugtracker">https://github.com/openandroidinstaller-dev/openandroidinstaller/issues</url>
   <url type="help">https://openandroidinstaller.org/faq.html</url>
@@ -60,14 +63,14 @@
         <p>This release v0.5.2-beta adds:</p>
         <ul>
           <li>mi439 twrp name to directly resolve to twrp download</li>
-          <li>Improved documentation (thanks to <a href="https://github.com/SirRGB">@SirRGB</a>)</li>
-          <li>Improved error message for loading images (addresses <a href="https://github.com/example-repo/issue/394">#394</a> and <a href="https://github.com/example-repo/issue/354">#354</a>)</li>
-          <li>Improve behavior when rescaling the installer (addresses <a href="https://github.com/example-repo/issue/379">#379</a>)</li>
+          <li>Improved documentation (thanks to @SirRGB)</li>
+          <li>Improved error message for loading images (addresses #394 and #354)</li>
+          <li>Improve behavior when rescaling the installer (addresses #379)</li>
         </ul>
         <p>Newly supported devices:</p>
         <ul>
-          <li>OnePlus 3/3T (oneplus3) (thanks to <a href="https://github.com/SirRGB">@SirRGB</a>)</li>
-          <li>Redmi 9 Poco M2 (lancelot) (thanks to <a href="https://github.com/anon1892">@anon1892</a>)</li>
+          <li>OnePlus 3/3T (oneplus3) (thanks to @SirRGB)</li>
+          <li>Redmi 9 Poco M2 (lancelot) (thanks to @anon1892)</li>
         </ul>
         <p>Fixes:</p>
         <ul>
