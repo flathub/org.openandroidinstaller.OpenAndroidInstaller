@@ -13,12 +13,26 @@
 	],
 	"modules": [
 		{
-			"name": "cpython",
+			"name": "python",
 			"sources": [
 				{
 					"type": "archive",
 					"url": "https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz",
 					"sha256": "a57dc82d77358617ba65b9841cee1e3b441f386c3789ddc0676eca077f2951c3"
+				}
+			]
+		},
+		{
+			"name": "cython",
+			"buildsystem": "simple",
+			"build-commands": [
+				"python3 setup.py install --prefix=/app --root=/"
+			],
+			"sources": [
+				{
+					"type": "archive",
+					"url": "https://files.pythonhosted.org/packages/0a/70/1500f05bddb16d795b29fac42954b3c8764c82367b8326c10f038471ae7f/Cython-0.29.34.tar.gz",
+					"sha256": "1909688f5d7b521a60c396d20bba9e47a1b2d2784bfb085401e1e1e7d29a29a8"
 				}
 			]
 		},
