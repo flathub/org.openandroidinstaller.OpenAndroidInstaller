@@ -18,7 +18,7 @@
 				{
 					"type": "archive",
 					"url": "https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz",
-					"sha256": "MGUCMQCdRZekYCDglIJgUr2ttCVRrpcvZ5gHuEhqYA0pWeRjGkzwuJqPwcsuhjFjVNV1TCECMB2YTa0C121SEJMvzHSiucC1sD2INvi4fc261BgZHobh+jR9gmTJ8G+QeLlglNNAFQ=="
+					"sha256": "a57dc82d77358617ba65b9841cee1e3b441f386c3789ddc0676eca077f2951c3"
 				}
 			]
 		},
