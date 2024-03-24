@@ -110,8 +110,8 @@
 				},
 				{
 					"type": "file",
-					"url": "https://files.pythonhosted.org/packages/bd/9c/aff8a1fac5c8ae6180a56f6ff6f515057b188789923b1afb897196116735/poetry-1.8.2-py3-none-any.whl",
-					"sha256": "b42b400d9a803af6e788a30a6f3e9998020b77860e28df20647eb10b6f414910"
+					"url": "https://files.pythonhosted.org/packages/7d/25/f3bfda3c458d114005af99441d009936b85a34a730aeb9cf57fb2630d9f7/poetry-1.6.1-py3-none-any.whl",
+					"sha256": "9b4cb6079c08cc0d91e8cba18a6bd4d4f7d7830263a7fb18ecb3faa77937c988"
 				},
 				{
 					"type": "script",
@@ -135,7 +135,7 @@
 			],
 			"build-commands": [
 				"mkdir -p /app/{bin,share/{appdata,applications,icons/hicolor/512x512/apps}}",
-				"pip3 install --prefix=/app --no-deps --find-links=\"file://${PWD}\" --no-index poetry-core==1.8.2 .",
+				"pip3 install --prefix=/app --no-deps --find-links=\"file://${PWD}\" --no-index poetry-core==1.6.1 .",
 				"mkdir -p /app/lib/python3.11/site-packages/openandroidinstaller/bin",
 				"install -Dm755 openandroidinstaller.sh /app/bin/openandroidinstaller",
 				"install -Dm755 ${FLATPAK_ID}.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png",
