@@ -81,8 +81,8 @@
 				}
 			],
 			"build-commands": [
-				"install -Dm755 adb /app/lib/python3.10/site-packages/openandroidinstaller/bin/adb",
-				"install -Dm755 fastboot /app/lib/python3.10/site-packages/openandroidinstaller/bin/fastboot"
+				"install -Dm755 adb /app/lib/python3.11/site-packages/openandroidinstaller/bin/adb",
+				"install -Dm755 fastboot /app/lib/python3.11/site-packages/openandroidinstaller/bin/fastboot"
 			]
 		},
 		{
@@ -96,7 +96,7 @@
 				}
 			],
 			"build-commands": [
-				"install -Dm755 heimdall /app/lib/python3.10/site-packages/openandroidinstaller/bin/heimdall"
+				"install -Dm755 heimdall /app/lib/python3.11/site-packages/openandroidinstaller/bin/heimdall"
 			]
 		},
 		{
@@ -110,8 +110,8 @@
 				},
 				{
 					"type": "file",
-					"url": "https://files.pythonhosted.org/packages/09/79/5ab16fbf2d9354c242e9f9e784d604dd06842405f7797e71238f3c053200/poetry_core-1.0.7-py2.py3-none-any.whl",
-					"sha256": "4f8a7f5390d772f42c4c4c3f188e6424b802cb4b57466c6633a1b9ac36f18a43"
+					"url": "https://files.pythonhosted.org/packages/bd/9c/aff8a1fac5c8ae6180a56f6ff6f515057b188789923b1afb897196116735/poetry-1.8.2-py3-none-any.whl",
+					"sha256": "b42b400d9a803af6e788a30a6f3e9998020b77860e28df20647eb10b6f414910"
 				},
 				{
 					"type": "script",
@@ -135,8 +135,8 @@
 			],
 			"build-commands": [
 				"mkdir -p /app/{bin,share/{appdata,applications,icons/hicolor/512x512/apps}}",
-				"pip3 install --prefix=/app --no-deps --find-links=\"file://${PWD}\" --no-index poetry-core==1.0.7 .",
-				"mkdir -p /app/lib/python3.10/site-packages/openandroidinstaller/bin",
+				"pip3 install --prefix=/app --no-deps --find-links=\"file://${PWD}\" --no-index poetry-core==1.8.2 .",
+				"mkdir -p /app/lib/python3.11/site-packages/openandroidinstaller/bin",
 				"install -Dm755 openandroidinstaller.sh /app/bin/openandroidinstaller",
 				"install -Dm755 ${FLATPAK_ID}.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png",
 				"install -Dm755 ${FLATPAK_ID}.appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml",
