@@ -13,6 +13,16 @@
 	],
 	"modules": [
 		{
+			"name": "python",
+			"sources": [
+				{
+					"type": "archive",
+					"url": "https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz",
+					"sha256": "a57dc82d77358617ba65b9841cee1e3b441f386c3789ddc0676eca077f2951c3"
+				}
+			]
+		},
+		{
 			"name": "cython",
 			"buildsystem": "simple",
 			"build-commands": [
@@ -27,6 +37,20 @@
 			]
 		},
 		{
+			"name": "wheel",
+			"buildsystem": "simple",
+			"build-commands": [
+				"pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"wheel\" --no-build-isolation"
+			],
+			"sources": [
+				{
+					"type": "file",
+					"url": "https://files.pythonhosted.org/packages/7d/cd/d7460c9a869b16c3dd4e1e403cce337df165368c71d6af229a74699622ce/wheel-0.43.0-py3-none-any.whl",
+					"sha256": "55c570405f142630c6b9f72fe09d9b67cf1477fcf543ae5b8dcb1f5b7377da81"
+				}
+			]
+		},
+		{
 			"name": "PyYAML",
 			"buildsystem": "simple",
 			"build-commands": [
@@ -35,8 +59,8 @@
 			"sources": [
 				{
 					"type": "file",
-					"url": "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz",
-					"sha256": "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
+					"url": "https://files.pythonhosted.org/packages/cd/e5/af35f7ea75cf72f2cd079c95ee16797de7cd71f29ea7c68ae5ce7be1eda0/PyYAML-6.0.1.tar.gz",
+					"sha256": "bfdf460b1736c775f2ba9f6a92bca30bc2095067b8a9d77876d1fad6cc3b4a43"
 				}
 			]
 		},
@@ -76,13 +100,13 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://dl.google.com/android/repository/platform-tools_r34.0.1-linux.zip",
-					"sha256": "c72bba58d99103abd4931b5a5d75146047b35e498092b6f03b6db3f5b07afc51"
+					"url": "https://dl.google.com/android/repository/platform-tools_r35.0.1-linux.zip",
+					"sha256": "823d270be01444828ccd09e94209ff394fb8a8457243e1c15689fe0544acbc72"
 				}
 			],
 			"build-commands": [
-				"install -Dm755 adb /app/lib/python3.10/site-packages/openandroidinstaller/bin/adb",
-				"install -Dm755 fastboot /app/lib/python3.10/site-packages/openandroidinstaller/bin/fastboot"
+				"install -Dm755 adb /app/lib/python3.11/site-packages/openandroidinstaller/bin/adb",
+				"install -Dm755 fastboot /app/lib/python3.11/site-packages/openandroidinstaller/bin/fastboot"
 			]
 		},
 		{
@@ -96,7 +120,7 @@
 				}
 			],
 			"build-commands": [
-				"install -Dm755 heimdall /app/lib/python3.10/site-packages/openandroidinstaller/bin/heimdall"
+				"install -Dm755 heimdall /app/lib/python3.11/site-packages/openandroidinstaller/bin/heimdall"
 			]
 		},
 		{
@@ -105,18 +129,18 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.5.2-beta.tar.gz",
-					"sha256": "04bea40e7c77deadf9b0d3bc422af328e0cb05823da43198c2815c140e4b9283"
+					"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.5.3-beta.tar.gz",
+					"sha256": "52e0f0d5e2b36b2fa36e0370287bff67bfd2bf34982bb8333bc23ff5f2b188c6"
 				},
 				{
 					"type": "file",
-					"url": "https://files.pythonhosted.org/packages/09/79/5ab16fbf2d9354c242e9f9e784d604dd06842405f7797e71238f3c053200/poetry_core-1.0.7-py2.py3-none-any.whl",
-					"sha256": "4f8a7f5390d772f42c4c4c3f188e6424b802cb4b57466c6633a1b9ac36f18a43"
+					"url": "https://files.pythonhosted.org/packages/a1/8d/85fcf9bcbfefcc53a1402450f28e5acf39dcfde3aabb996a1d98481ac829/poetry_core-1.9.0-py3-none-any.whl",
+					"sha256": "4e0c9c6ad8cf89956f03b308736d84ea6ddb44089d16f2adc94050108ec1f5a1"
 				},
 				{
 					"type": "script",
 					"commands": [
-						"python3 /app/lib/python3.10/site-packages/openandroidinstaller/openandroidinstaller.py -l ~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/"
+						"python3 /app/lib/python3.11/site-packages/openandroidinstaller/openandroidinstaller.py -l ~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/"
 					],
 					"dest-filename": "openandroidinstaller.sh"
 				},
@@ -135,8 +159,8 @@
 			],
 			"build-commands": [
 				"mkdir -p /app/{bin,share/{appdata,applications,icons/hicolor/512x512/apps}}",
-				"pip3 install --prefix=/app --no-deps --find-links=\"file://${PWD}\" --no-index poetry-core==1.0.7 .",
-				"mkdir -p /app/lib/python3.10/site-packages/openandroidinstaller/bin",
+				"pip3 install --prefix=/app --no-deps --find-links=\"file://${PWD}\" --no-index poetry-core==1.9.0 .",
+				"mkdir -p /app/lib/python3.11/site-packages/openandroidinstaller/bin",
 				"install -Dm755 openandroidinstaller.sh /app/bin/openandroidinstaller",
 				"install -Dm755 ${FLATPAK_ID}.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png",
 				"install -Dm755 ${FLATPAK_ID}.appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml",

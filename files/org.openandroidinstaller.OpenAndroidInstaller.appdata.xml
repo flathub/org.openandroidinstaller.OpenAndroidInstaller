@@ -4,6 +4,9 @@
   
   <name>OpenAndroidInstaller</name>
   <summary>Makes installing alternative Android distributions nice and easy</summary>
+  <developer id="org.openandroidinstaller">
+    <name>Tobias Sterbak</name>
+  </developer>
   <url type="homepage">https://openandroidinstaller.org/</url>
   <url type="bugtracker">https://github.com/openandroidinstaller-dev/openandroidinstaller/issues</url>
   <url type="help">https://openandroidinstaller.org/faq.html</url>
@@ -33,24 +36,46 @@
   </screenshots>
 
   <releases>
+    <release version="v0.5.3-beta" date="2024-03-24" urgency="medium">
+      <description>
+        <p>This release v0.5.3-beta adds:</p>
+        <p>New devices:</p>
+        <ul>
+            <li>support for Xiaomi Mi A2 / 6X (jasmine_sprout) (thanks to @anon1892)</li>
+            <li>support for Xiaomi Redmi Note 10 Pro (sweet) (thanks to @BjornW)</li>
+            <li>support for Samsung Galaxy S5 mini (kminilte) (thanks to @LudovicRousseau)</li>
+            <li>support more Versions of Samsung Galaxy S5 mini (thanks to @SirRGB)</li>
+        </ul>
+        <p>Fixes:</p>
+        <ul>
+          <li>Show proper error messages when bash shell is not found and try other paths.</li>
+        </ul>
+        <p>Other changes:</p>
+        <ul>
+            <li>Update to python 3.11</li>
+            <li>Support latest Android Platform Tools 35.0.1</li>
+        </ul>
+      </description>
+      <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.5.3-beta</url>
+    </release>
     <release version="v0.5.2-beta" date="2024-01-18" urgency="medium">
       <description>
         <p>This release v0.5.2-beta adds:</p>
         <ul>
           <li>mi439 twrp name to directly resolve to twrp download</li>
-          <li>Improved documentation (thanks to <a href="https://github.com/SirRGB">@SirRGB</a>)</li>
-          <li>Improved error message for loading images (addresses <a href="https://github.com/example-repo/issue/394">#394</a> and <a href="https://github.com/example-repo/issue/354">#354</a>)</li>
-          <li>Improve behavior when rescaling the installer (addresses <a href="https://github.com/example-repo/issue/379">#379</a>)</li>
+          <li>Improved documentation (thanks to @SirRGB)</li>
+          <li>Improved error message for loading images (addresses #394 and #354)</li>
+          <li>Improve behavior when rescaling the installer (addresses #379)</li>
         </ul>
         <p>Newly supported devices:</p>
         <ul>
-          <li>OnePlus 3/3T (oneplus3) (thanks to <a href="https://github.com/SirRGB">@SirRGB</a>)</li>
-          <li>Redmi 9 Poco M2 (lancelot) (thanks to <a href="https://github.com/anon1892">@anon1892</a>)</li>
+          <li>OnePlus 3/3T (oneplus3) (thanks to @SirRGB)</li>
+          <li>Redmi 9 Poco M2 (lancelot) (thanks to @anon1892)</li>
         </ul>
         <p>Fixes:</p>
         <ul>
           <li>Bug where installer crashes when sideloading progress goes over 100%</li>
-          <li>Properly handle exceptions while processing the ROM zip file (File is not a zip file, file is a zip file but does not contain metadata file) (thanks to <a href="https://github.com/anon1892">@anon1892</a>)</li>
+          <li>Properly handle exceptions while processing the ROM zip file (File is not a zip file, file is a zip file but does not contain metadata file) (thanks to @anon1892)</li>
         </ul>
       </description>
       <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.5.2-beta</url>
