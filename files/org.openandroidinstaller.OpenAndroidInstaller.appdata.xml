@@ -4,7 +4,7 @@
   
   <name>OpenAndroidInstaller</name>
   <summary>Makes installing alternative Android distributions nice and easy</summary>
-  <developer>
+  <developer id="org.openandroidinstaller">
     <name>Tobias Sterbak</name>
   </developer>
   <url type="homepage">https://openandroidinstaller.org/</url>
@@ -75,7 +75,7 @@
         <p>Fixes:</p>
         <ul>
           <li>Bug where installer crashes when sideloading progress goes over 100%</li>
-          <li>Properly handle exceptions while processing the ROM zip file (File is not a zip file, file is a zip file but does not contain metadata file) (thanks to <a href="https://github.com/anon1892">@anon1892</a>)</li>
+          <li>Properly handle exceptions while processing the ROM zip file (File is not a zip file, file is a zip file but does not contain metadata file) (thanks to @anon1892)</li>
         </ul>
       </description>
       <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.5.2-beta</url>
