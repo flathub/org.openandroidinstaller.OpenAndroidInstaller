@@ -78,7 +78,7 @@
 				}
 			]
 		},
-		"files/python3-requirements.json",
+		"files/pypi-dependencies.json",
 		{
 			"name": "brotlicffi",
 			"buildsystem": "simple",
