@@ -78,7 +78,7 @@
 				}
 			]
 		},
-		"files/pypi-dependencies.json",
+		"files/generated-poetry-sources.json",
 		{
 			"name": "brotlicffi",
 			"buildsystem": "simple",
