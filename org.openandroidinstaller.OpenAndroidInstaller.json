@@ -1,7 +1,7 @@
 {
 	"app-id": "org.openandroidinstaller.OpenAndroidInstaller",
 	"runtime": "org.freedesktop.Platform",
-	"runtime-version": "22.08",
+	"runtime-version": "24.08",
 	"sdk": "org.freedesktop.Sdk",
 	"command": "openandroidinstaller",
 	"finish-args": [
@@ -78,7 +78,7 @@
 				}
 			]
 		},
-		"files/generated-poetry-sources.json",
+		"files/python3-requirements.json",
 		{
 			"name": "brotlicffi",
 			"buildsystem": "simple",
@@ -100,8 +100,8 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://dl.google.com/android/repository/platform-tools_r35.0.1-linux.zip",
-					"sha256": "823d270be01444828ccd09e94209ff394fb8a8457243e1c15689fe0544acbc72"
+					"url": "https://dl.google.com/android/repository/platform-tools_r35.0.2-linux.zip",
+					"sha256": "acfdcccb123a8718c46c46c059b2f621140194e5ec1ac9d81715be3d6ab6cd0a"
 				}
 			],
 			"build-commands": [
@@ -129,8 +129,8 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.5.3-beta.tar.gz",
-					"sha256": "52e0f0d5e2b36b2fa36e0370287bff67bfd2bf34982bb8333bc23ff5f2b188c6"
+					"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.5.4-beta.tar.gz",
+					"sha256": "229ffc8f79bb726dd8891478d5a57e215e1a973b334e85591460da79de9f0313"
 				},
 				{
 					"type": "file",
