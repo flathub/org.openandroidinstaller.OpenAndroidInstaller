@@ -17,16 +17,6 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/e0/8f/6978427ce3f72b189012e1731d1d2d27b3151caa741666c905320e0a3662/maturin-1.8.2.tar.gz",
-            "sha256": "e31abc70f6f93285d6e63d2f4459c079c94c259dd757370482d2d4ceb9ec1fa0"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/97/09/3da290ba3934c7003d3a178840579989a7fcfa5bd23f50dd7f2ff27f30e1/setuptools_rust-1.10.2-py3-none-any.whl",
-            "sha256": "4b39c435ae9670315d522ed08fa0e8cb29f2a6048033966b6be2571a90ce4f1c"
-        },
-        {
-            "type": "file",
             "url": "https://files.pythonhosted.org/packages/1d/66/8f42c941be949ef2b22fe905d850c794e7c170a526023612aad5f3a121ad/setuptools_scm-7.1.0-py3-none-any.whl",
             "sha256": "73988b6d848709e2af142aa48c986ea29592bbcfca5375678064708205253d8e"
         },
@@ -232,8 +222,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/fc/01/f3e5ac5e7c25833db5eb555f7b7ab24cd6f8c322d3a3ad2d67a952dc0abc/pydantic_core-2.27.2.tar.gz",
-            "sha256": "eb026e5a4c1fee05726072337ff51d1efb6f59090b7da90d30ea58625b1ffb39"
+            "url": "https://files.pythonhosted.org/packages/a8/7c/b860618c25678bbd6d1d99dbdfdf0510ccb50790099b963ff78a124b754f/pydantic_core-2.27.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+            "sha256": "1c1fd185014191700554795c99b347d64f2bb637966c4cfc16998a0ca700d048"
         },
         {
             "type": "file",
@@ -332,8 +322,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/69/8a/b9dc7678803429e4a3bc9ba462fa3dd9066824d3c607490235c6a796be5a/setuptools-75.8.0-py3-none-any.whl",
-            "sha256": "e3982f444617239225d675215d51f6ba05f845d4eec313da4418fdbb56fb27e3"
+            "url": "https://files.pythonhosted.org/packages/07/6a/0270e295bf30c37567736b7fca10167640898214ff911273af37ddb95770/setuptools-73.0.1-py3-none-any.whl",
+            "sha256": "b208925fcb9f7af924ed2dc04708ea89791e24bde0d3020b27df0e116088b34e"
         },
         {
             "type": "file",
@@ -387,18 +377,18 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/af/c0/854216d09d33c543f12a44b393c402e89a920b1a0a7dc634c42de91b9cf6/uvloop-0.21.0.tar.gz",
-            "sha256": "3bf12b0fda68447806a7ad847bfa591613177275d35b6724b1ee573faa3704e3"
+            "url": "https://files.pythonhosted.org/packages/8a/ca/0864176a649838b838f36d44bf31c451597ab363b60dc9e09c9630619d41/uvloop-0.21.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+            "sha256": "8a375441696e2eda1c43c44ccb66e04d61ceeffcd76e4929e527b7fa401b90fb"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/8a/b1/25acf6767af6f7e44e0086309825bd8c098e301eed5868dc5350642124b9/watchdog-4.0.2-py3-none-manylinux2014_aarch64.whl",
-            "sha256": "936acba76d636f70db8f3c66e76aa6cb5136a936fc2a5088b9ce1c7a3508fc83"
+            "url": "https://files.pythonhosted.org/packages/01/d2/c8931ff840a7e5bd5dcb93f2bb2a1fd18faf8312e9f7f53ff1cf76ecc8ed/watchdog-4.0.2-py3-none-manylinux2014_x86_64.whl",
+            "sha256": "c0b14488bd336c5b1845cee83d3e631a1f8b4e9c5091ec539406e4a324f882d8"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/f5/26/c705fc77d0a9ecdb9b66f1e2976d95b81df3cae518967431e7dbf9b5e219/watchfiles-1.0.4.tar.gz",
-            "sha256": "6ba473efd11062d73e4f00c2b730255f9c1bdd73cd5f9fe5b5da8dbd4a717205"
+            "url": "https://files.pythonhosted.org/packages/3a/b0/ff04194141a5fe650c150400dd9e42667916bc0f52426e2e174d779b8a74/watchfiles-1.0.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+            "sha256": "b77d5622ac5cc91d21ae9c2b284b5d5c51085a0bdb7b518dba263d0af006132c"
         },
         {
             "type": "file",

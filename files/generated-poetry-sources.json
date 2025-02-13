@@ -2,7 +2,7 @@
     "name": "poetry-deps",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} wheel setuptools setuptools_scm altgraph anyio Brotli certifi cffi charset-normalizer click colorama contextlib2 exceptiongroup flet flet-core gitdb GitPython h11 httpcore httpx idna inflate64 iniconfig loguru macholib markdown-it-py mdurl multivolumefile oauthlib packaging pathspec pbr pefile Pillow platformdirs pluggy psutil py7zr pybcj pycparser pycryptodomex Pygments pyppmd pywin32-ctypes PyYAML pyzstd regex repath requests rfc3986 rich schema six smmap sniffio stevedore texttable tomli typing-extensions urllib3 watchdog websocket-client websockets win32-setctime"
+        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} wheel setuptools setuptools_scm altgraph anyio Brotli certifi cffi charset-normalizer click pydantic colorama starlette contextlib2 exceptiongroup fastapi flet flet-core gitdb GitPython h11 httpcore httpx idna inflate64 iniconfig loguru macholib markdown-it-py mdurl multivolumefile oauthlib packaging pathspec pbr pefile Pillow platformdirs pluggy psutil py7zr pybcj pycparser pycryptodomex Pygments pyppmd pywin32-ctypes PyYAML pyzstd regex repath requests rfc3986 rich schema six smmap sniffio stevedore texttable tomli typing-extensions urllib3 watchdog websocket-client websockets win32-setctime"
     ],
     "sources": [
         {
@@ -39,6 +39,16 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/4c/dd/2234eab22353ffc7d94e8d13177aaa050113286e93e7b40eae01fbf7c3d9/certifi-2023.7.22-py3-none-any.whl",
             "sha256": "92d6037539857d8206b8f6ae472e8b77db8058fec5937a1ef3f54304089edbb9"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl",
+            "sha256": "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/d9/61/f2b52e107b1fc8944b33ef56bf6ac4ebbe16d91b94d2b87ce013bf63fb84/starlette-0.45.3-py3-none-any.whl",
+            "sha256": "dfb6d332576f136ec740296c7e8bb8c8a7125044e7c6da30744718880cdd059d"
         },
         {
             "type": "file",
@@ -82,13 +92,23 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/a4/fd/17c690b9d8a437797f6bcec813e423711bfbacabab1f6a4aa28aed303fd1/flet_core-0.24.1-py3-none-any.whl",
+            "sha256": "0c729a6a5f914b54ce90d727594d896b975ad1ef749c7076b6775ad4684ea4ed"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/dc/de/62f1c842b9a3a46ea60a1a2bd8d60680645fc120b5e5209b5b6b37cb3c08/flet_runtime-0.24.1-py3-none-any.whl",
+            "sha256": "57087b5c23c3ce3192354e215cdb68326f4a0685e5515ce020fae80ef83a9cb2"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/9b/12/4e72eff8c5e19249fdea6596ad77673fe88b69da92eca2f9fecd8998bf20/flet-0.24.1-py3-none-any.whl",
             "sha256": "dfcfe8febedbc5eecb714edc11ee3e13c4a00c83000e55d4b664f695473f5141"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a4/fd/17c690b9d8a437797f6bcec813e423711bfbacabab1f6a4aa28aed303fd1/flet_core-0.24.1-py3-none-any.whl",
-            "sha256": "0c729a6a5f914b54ce90d727594d896b975ad1ef749c7076b6775ad4684ea4ed"
+            "url": "https://files.pythonhosted.org/packages/8f/7d/2d6ce181d7a5f51dedb8c06206cbf0ec026a99bf145edd309f9e17c3282f/fastapi-0.115.8-py3-none-any.whl",
+            "sha256": "753a96dd7e036b34eeef8babdfcfe3f28ff79648f86551eb36bfc1b0bf4a8cbf"
         },
         {
             "type": "file",
@@ -344,6 +364,16 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/0a/e6/a7d828fef907843b2a5773ebff47fb79ac0c1c88d60c0ca9530ee941e248/win32_setctime-1.1.0-py3-none-any.whl",
             "sha256": "231db239e959c2fe7eb1d7dc129f11172354f98361c4fa2d6d2d7e278baa8aad"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/fc/01/f3e5ac5e7c25833db5eb555f7b7ab24cd6f8c322d3a3ad2d67a952dc0abc/pydantic_core-2.27.2.tar.gz",
+            "sha256": "eb026e5a4c1fee05726072337ff51d1efb6f59090b7da90d30ea58625b1ffb39"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/f4/3c/8cc1cc84deffa6e25d2d0c688ebb80635dfdbf1dbea3e30c541c8cf4d860/pydantic-2.10.6-py3-none-any.whl",
+            "sha256": "427d664bf0b8a2b34ff5dd0f5a18df00591adcee7198fbd71981054cef37b584"
         }
     ]
 }
