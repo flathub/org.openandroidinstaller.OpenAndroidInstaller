@@ -7,6 +7,11 @@
     "sources": [
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/1d/66/8f42c941be949ef2b22fe905d850c794e7c170a526023612aad5f3a121ad/setuptools_scm-7.1.0-py3-none-any.whl",
+            "sha256": "73988b6d848709e2af142aa48c986ea29592bbcfca5375678064708205253d8e"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/4d/3f/3bc3f1d83f6e4a7fcb834d3720544ca597590425be5ba9db032b2bf322a2/altgraph-0.17.4-py2.py3-none-any.whl",
             "sha256": "642743b4750de17e655e6711601b077bc6598dbfa3ba5fa2b2a35ce12b508dff"
         },
