@@ -78,7 +78,7 @@
 				}
 			]
 		},
-		"files/generated-poetry-sources.json",
+		"files/python-requirements.json",
 		{
 			"name": "brotlicffi",
 			"buildsystem": "simple",
