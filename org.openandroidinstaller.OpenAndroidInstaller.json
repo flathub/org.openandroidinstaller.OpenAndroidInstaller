@@ -78,6 +78,149 @@
 				}
 			]
 		},
+		{
+			"name": "libmpv",
+			"cleanup": [
+				"/include",
+				"/lib/pkgconfig",
+				"/share/man"
+			],
+			"buildsystem": "meson",
+			"config-opts": [
+				"-Dbuild-date=false",
+				"-Dlibmpv=true"
+			],
+			"sources": [
+				{
+					"type": "archive",
+					"url": "https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz",
+					"sha256": "2ca92437affb62c2b559b4419ea4785c70d023590500e8a52e95ea3ab4554683"
+				}
+			],
+			"modules": [
+				{
+					"name": "luajit",
+					"no-autogen": true,
+					"cleanup": [
+						"/bin",
+						"/lib/*.a",
+						"/include",
+						"/lib/pkgconfig",
+						"/share/man"
+					],
+					"sources": [
+						{
+							"type": "git",
+							"url": "https://github.com/LuaJIT/LuaJIT.git",
+							"commit": "f73e649a954b599fc184726c376476e7a5c439ca"
+						},
+						{
+							"type": "shell",
+							"commands": [
+								"sed -i 's|/usr/local|/app|' ./Makefile"
+							]
+						}
+					]
+				},
+				{
+					"name": "libv4l2",
+					"cleanup": [
+						"/sbin",
+						"/bin",
+						"/include",
+						"/lib/*.la",
+						"/lib/*/*.la",
+						"/lib*/*/*/*.la",
+						"/lib/pkgconfig",
+						"/share/man"
+					],
+					"config-opts": [
+						"--disable-static",
+						"--disable-bpf",
+						"--with-udevdir=/app/lib/udev"
+					],
+					"sources": [
+						{
+							"type": "archive",
+							"url": "https://linuxtv.org/downloads/v4l-utils/v4l-utils-1.24.1.tar.bz2",
+							"sha256": "cbb7fe8a6307f5ce533a05cded70bb93c3ba06395ab9b6d007eb53b75d805f5b"
+						}
+					]
+				},
+				{
+					"name": "nv-codec-headers",
+					"cleanup": [
+						"*"
+					],
+					"no-autogen": true,
+					"make-install-args": [
+						"PREFIX=/app"
+					],
+					"sources": [
+						{
+							"type": "archive",
+							"url": "https://github.com/FFmpeg/nv-codec-headers/releases/download/n11.1.5.2/nv-codec-headers-11.1.5.2.tar.gz",
+							"sha256": "1442e3159e7311dd71f8fca86e615f51609998939b6a6d405d6683d8eb3af6ee"
+						}
+					]
+				},
+				{
+					"name": "libass",
+					"cleanup": [
+						"/include",
+						"/lib/*.la",
+						"/lib/pkgconfig"
+					],
+					"config-opts": [
+						"--disable-static"
+					],
+					"sources": [
+						{
+							"type": "archive",
+							"url": "https://github.com/libass/libass/releases/download/0.17.1/libass-0.17.1.tar.gz",
+							"sha256": "d653be97198a0543c69111122173c41a99e0b91426f9e17f06a858982c2fb03d"
+						}
+					]
+				},
+				{
+					"name": "uchardet",
+					"buildsystem": "cmake-ninja",
+					"config-opts": [
+						"-DCMAKE_BUILD_TYPE=Release",
+						"-DBUILD_STATIC=0"
+					],
+					"cleanup": [
+						"/bin",
+						"/include",
+						"/lib/pkgconfig",
+						"/share/man"
+					],
+					"sources": [
+						{
+							"type": "archive",
+							"url": "https://gitlab.freedesktop.org/uchardet/uchardet/-/archive/v0.0.8/uchardet-v0.0.8.tar.gz",
+							"sha256": "5aa402a1b5b1dbb8d81096f141ff1224e079f4d3a1db0f79ecca782756d3a416"
+						}
+					]
+				},
+				{
+					"name": "libplacebo",
+					"buildsystem": "meson",
+					"cleanup": [
+						"/include",
+						"/lib/pkgconfig"
+					],
+					"sources": [
+						{
+							"type": "git",
+							"url": "https://github.com/haasn/libplacebo.git",
+							"commit": "1fd3c7bde7b943fe8985c893310b5269a09b46c5",
+							"tag": "v7.349.0"
+						}
+					]
+				}
+			]
+		},
 		"files/python-requirements.json",
 		{
 			"name": "brotlicffi",
