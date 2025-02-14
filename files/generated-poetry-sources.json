@@ -2,9 +2,14 @@
     "name": "poetry-deps",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} wheel setuptools setuptools_scm altgraph anyio Brotli certifi cffi charset-normalizer click pydantic colorama starlette contextlib2 exceptiongroup fastapi flet flet-core gitdb GitPython h11 httpcore httpx idna inflate64 iniconfig loguru macholib markdown-it-py mdurl multivolumefile oauthlib packaging pathspec pbr pefile Pillow platformdirs pluggy psutil py7zr pybcj pycparser pycryptodomex Pygments pyppmd pywin32-ctypes PyYAML pyzstd regex repath requests rfc3986 rich schema six smmap sniffio stevedore texttable tomli typing-extensions urllib3 watchdog websocket-client websockets win32-setctime"
+        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} wheel setuptools altgraph anyio Brotli certifi cffi charset-normalizer click pydantic colorama starlette contextlib2 exceptiongroup fastapi flet flet-core flet-desktop-light gitdb GitPython h11 httpcore httpx idna inflate64 iniconfig loguru macholib markdown-it-py mdurl multivolumefile oauthlib packaging pathspec pbr pefile Pillow platformdirs pluggy psutil py7zr pybcj pycparser pycryptodomex Pygments pyppmd pywin32-ctypes PyYAML pyzstd regex repath requests rfc3986 rich schema six smmap sniffio stevedore texttable tomli urllib3 watchdog websocket-client websockets win32-setctime"
     ],
     "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/a8/7c/b860618c25678bbd6d1d99dbdfdf0510ccb50790099b963ff78a124b754f/pydantic_core-2.27.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+            "sha256": "1c1fd185014191700554795c99b347d64f2bb637966c4cfc16998a0ca700d048"
+        },
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/61/86/cc8d1ff2ca31a312a25a708c891cf9facbad4eae493b3872638db6785eb5/wheel-0.40.0-py3-none-any.whl",
@@ -102,8 +107,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/9b/12/4e72eff8c5e19249fdea6596ad77673fe88b69da92eca2f9fecd8998bf20/flet-0.24.1-py3-none-any.whl",
-            "sha256": "dfcfe8febedbc5eecb714edc11ee3e13c4a00c83000e55d4b664f695473f5141"
+            "url": "https://files.pythonhosted.org/packages/dd/25/a770b6fe37945298334c7e3a6a5e79604030294d9d312c2cfd321d29aa25/flet-0.26.0-py3-none-any.whl",
+            "sha256": "779e58dcfb4fbf0760715471121a183bf7ecf48e522fee068556cb26df3490fb"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/f2/21/565ba7ca9f3fb066afc727560f424cfab15ebd6e8a4864eb6d40810b4538/flet_desktop_light-0.26.0-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+            "sha256": "20a2cb5e2cdbfe4c65a37a63f39801bd456c0bf6b130e5b0a1fd2eb18b49bd74"
         },
         {
             "type": "file",
@@ -337,8 +347,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ec/6b/63cc3df74987c36fe26157ee12e09e8f9db4de771e0f3404263117e75b95/typing_extensions-4.7.1-py3-none-any.whl",
-            "sha256": "440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36"
+            "url": "https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl",
+            "sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"
         },
         {
             "type": "file",
@@ -364,11 +374,6 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/0a/e6/a7d828fef907843b2a5773ebff47fb79ac0c1c88d60c0ca9530ee941e248/win32_setctime-1.1.0-py3-none-any.whl",
             "sha256": "231db239e959c2fe7eb1d7dc129f11172354f98361c4fa2d6d2d7e278baa8aad"
-        },
-        {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/fc/01/f3e5ac5e7c25833db5eb555f7b7ab24cd6f8c322d3a3ad2d67a952dc0abc/pydantic_core-2.27.2.tar.gz",
-            "sha256": "eb026e5a4c1fee05726072337ff51d1efb6f59090b7da90d30ea58625b1ffb39"
         },
         {
             "type": "file",
