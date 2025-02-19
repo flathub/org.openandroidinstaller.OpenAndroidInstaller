@@ -2,24 +2,29 @@
     "name": "poetry-deps",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} wheel setuptools setuptools_scm altgraph anyio Brotli certifi cffi charset-normalizer click colorama contextlib2 exceptiongroup flet flet-core gitdb GitPython h11 httpcore httpx idna inflate64 iniconfig loguru macholib markdown-it-py mdurl multivolumefile oauthlib packaging pathspec pbr pefile Pillow platformdirs pluggy psutil py7zr pybcj pycparser pycryptodomex Pygments pyppmd pywin32-ctypes PyYAML pyzstd regex repath requests rfc3986 rich schema six smmap sniffio stevedore texttable tomli typing-extensions urllib3 watchdog websocket-client websockets win32-setctime"
+        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} wheel setuptools altgraph anyio Brotli certifi cffi charset-normalizer click pydantic colorama starlette contextlib2 exceptiongroup fastapi flet flet-core flet-desktop-light gitdb GitPython h11 httpcore httpx idna inflate64 iniconfig loguru macholib markdown-it-py mdurl multivolumefile oauthlib packaging pathspec pbr pefile Pillow platformdirs pluggy psutil py7zr pybcj pycparser pycryptodomex Pygments pyppmd pywin32-ctypes PyYAML pyzstd regex repath requests rfc3986 rich schema six smmap sniffio stevedore texttable tomli urllib3 watchdog websocket-client websockets win32-setctime"
     ],
     "sources": [
-    	{
-			"type": "file",
-			"url": "https://files.pythonhosted.org/packages/61/86/cc8d1ff2ca31a312a25a708c891cf9facbad4eae493b3872638db6785eb5/wheel-0.40.0-py3-none-any.whl",
-			"sha256": "d236b20e7cb522daf2390fa84c55eea81c5c30190f90f29ae2ca1ad8355bf247"
-		},
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/a8/7c/b860618c25678bbd6d1d99dbdfdf0510ccb50790099b963ff78a124b754f/pydantic_core-2.27.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+            "sha256": "1c1fd185014191700554795c99b347d64f2bb637966c4cfc16998a0ca700d048"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/61/86/cc8d1ff2ca31a312a25a708c891cf9facbad4eae493b3872638db6785eb5/wheel-0.40.0-py3-none-any.whl",
+            "sha256": "d236b20e7cb522daf2390fa84c55eea81c5c30190f90f29ae2ca1ad8355bf247"
+        },
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/cc/ff/88d277ba936d226b0f6dbd6711145f90fcfeed3aa9455c1c2f62c8ffec5b/altgraph-0.17.3-py2.py3-none-any.whl",
             "sha256": "c8ac1ca6772207179ed8003ce7687757c04b0b71536f81e2ac5755c6226458fe"
         },
         {
-			"type": "file",
-			"url": "https://files.pythonhosted.org/packages/1d/66/8f42c941be949ef2b22fe905d850c794e7c170a526023612aad5f3a121ad/setuptools_scm-7.1.0-py3-none-any.whl",
-			"sha256": "73988b6d848709e2af142aa48c986ea29592bbcfca5375678064708205253d8e"
-		},
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/1d/66/8f42c941be949ef2b22fe905d850c794e7c170a526023612aad5f3a121ad/setuptools_scm-7.1.0-py3-none-any.whl",
+            "sha256": "73988b6d848709e2af142aa48c986ea29592bbcfca5375678064708205253d8e"
+        },
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/19/24/44299477fe7dcc9cb58d0a57d5a7588d6af2ff403fdd2d47a246c91a3246/anyio-3.7.1-py3-none-any.whl",
@@ -39,6 +44,16 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/4c/dd/2234eab22353ffc7d94e8d13177aaa050113286e93e7b40eae01fbf7c3d9/certifi-2023.7.22-py3-none-any.whl",
             "sha256": "92d6037539857d8206b8f6ae472e8b77db8058fec5937a1ef3f54304089edbb9"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl",
+            "sha256": "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/d9/61/f2b52e107b1fc8944b33ef56bf6ac4ebbe16d91b94d2b87ce013bf63fb84/starlette-0.45.3-py3-none-any.whl",
+            "sha256": "dfb6d332576f136ec740296c7e8bb8c8a7125044e7c6da30744718880cdd059d"
         },
         {
             "type": "file",
@@ -62,6 +77,11 @@
         },
         {
             "type": "file",
+            "url": "https://files.pythonhosted.org/packages/b6/d9/0137658a353168ffa9d0fc14b812d3834772040858ddd1cb6eeaf09f7a44/cookiecutter-2.6.0-py3-none-any.whl",
+            "sha256": "a54a8e37995e4ed963b3e82831072d1ad4b005af736bb17b99c2cbd9d41b6e2d"
+        },
+        {
+            "type": "file",
             "url": "https://files.pythonhosted.org/packages/76/56/6d6872f79d14c0cb02f1646cbb4592eef935857c0951a105874b7b62a0c3/contextlib2-21.6.0-py2.py3-none-any.whl",
             "sha256": "3fbdb64466afd23abaf6c977627b75b6139a5a3e8ce38405c5b413aed7a0471f"
         },
@@ -77,13 +97,28 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ee/dc/8f08995f7f8abec5a89e261a977b63e620e07e9cce824a612b980efa6b06/flet-0.7.4-py3-none-any.whl",
-            "sha256": "aa2ea96d883810b1be1d0b3b7ccbab7e159848b1b17ecd4884d27f6e87e44561"
+            "url": "https://files.pythonhosted.org/packages/a4/fd/17c690b9d8a437797f6bcec813e423711bfbacabab1f6a4aa28aed303fd1/flet_core-0.24.1-py3-none-any.whl",
+            "sha256": "0c729a6a5f914b54ce90d727594d896b975ad1ef749c7076b6775ad4684ea4ed"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/76/0a/2276aea6f2989848e5b8b52ab9a4a2df2027e8be30a6b4d93178552b4852/flet_core-0.7.4-py3-none-any.whl",
-            "sha256": "fa208e8cf1a64613a57c497526a9cb6eb46d153bed61f5ebb9518baf56d15c52"
+            "url": "https://files.pythonhosted.org/packages/dc/de/62f1c842b9a3a46ea60a1a2bd8d60680645fc120b5e5209b5b6b37cb3c08/flet_runtime-0.24.1-py3-none-any.whl",
+            "sha256": "57087b5c23c3ce3192354e215cdb68326f4a0685e5515ce020fae80ef83a9cb2"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/dd/25/a770b6fe37945298334c7e3a6a5e79604030294d9d312c2cfd321d29aa25/flet-0.26.0-py3-none-any.whl",
+            "sha256": "779e58dcfb4fbf0760715471121a183bf7ecf48e522fee068556cb26df3490fb"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/f2/21/565ba7ca9f3fb066afc727560f424cfab15ebd6e8a4864eb6d40810b4538/flet_desktop_light-0.26.0-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+            "sha256": "20a2cb5e2cdbfe4c65a37a63f39801bd456c0bf6b130e5b0a1fd2eb18b49bd74"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/8f/7d/2d6ce181d7a5f51dedb8c06206cbf0ec026a99bf145edd309f9e17c3282f/fastapi-0.115.8-py3-none-any.whl",
+            "sha256": "753a96dd7e036b34eeef8babdfcfe3f28ff79648f86551eb36bfc1b0bf4a8cbf"
         },
         {
             "type": "file",
@@ -312,8 +347,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ec/6b/63cc3df74987c36fe26157ee12e09e8f9db4de771e0f3404263117e75b95/typing_extensions-4.7.1-py3-none-any.whl",
-            "sha256": "440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36"
+            "url": "https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl",
+            "sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"
         },
         {
             "type": "file",
@@ -339,6 +374,11 @@
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/0a/e6/a7d828fef907843b2a5773ebff47fb79ac0c1c88d60c0ca9530ee941e248/win32_setctime-1.1.0-py3-none-any.whl",
             "sha256": "231db239e959c2fe7eb1d7dc129f11172354f98361c4fa2d6d2d7e278baa8aad"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/f4/3c/8cc1cc84deffa6e25d2d0c688ebb80635dfdbf1dbea3e30c541c8cf4d860/pydantic-2.10.6-py3-none-any.whl",
+            "sha256": "427d664bf0b8a2b34ff5dd0f5a18df00591adcee7198fbd71981054cef37b584"
         }
     ]
 }

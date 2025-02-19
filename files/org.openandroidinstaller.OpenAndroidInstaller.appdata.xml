@@ -36,6 +36,31 @@
   </screenshots>
 
   <releases>
+    <release version="v0.5.4-beta.1" date="2025-02-19" urgency="medium">
+      <description>
+        <p>This release v0.5.4-beta.1 adds:</p>
+        <p>New devices:</p>
+        <ul>
+            <li>support for violet (Xiaomi Redmi Note 7 Pro) (thanks to @anon1892)</li>
+            <li>support for apollo / apollon (Xiaomi Mi 10T / 10T Pro / Redmi K30S Ultra) (thanks to @anon1892)</li>
+            <li>support for ali (moto g6) (thanks to @SirRGB)</li>
+            <li>support for addison (moto z play) (thanks to @SirRGB)</li>
+            <li>support for billie (OnePlus Nord N10) (thanks to @SirRGB)</li>
+        </ul>
+        <p>Fixes:</p>
+        <ul>
+            <li>remove support for the Galaxy 10 line of devices #678</li>
+            <li>fix a bunch of bugs from the flet update</li>
+        </ul>
+        <p>Other:</p>
+        <ul>
+            <li>update flet to version 0.26.0</li>
+            <li>use the latest versions of adb, fastboot, and libusb</li>
+            <li>tracking of device codes of installation attempts in plausible.io.</li>
+        </ul>
+      </description>
+      <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.5.4-beta</url>
+    </release>
     <release version="v0.5.3-beta" date="2024-03-24" urgency="medium">
       <description>
         <p>This release v0.5.3-beta adds:</p>
