@@ -129,7 +129,7 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.5.5-pr-beta.tar.gz",
+					"url": "https://github.com/openandroidinstaller-dev/openandroidinstaller/archive/refs/tags/v0.5.4-beta.1.tar.gz",
 					"sha256": "76d6a7244e6d5a6bc9bd63cf843c52cac32d597af290d40cdd60ba2e973b8c79"
 				},
 				{
