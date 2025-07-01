@@ -140,7 +140,7 @@
 				{
 					"type": "script",
 					"commands": [
-						"python3 /app/lib/python3.11/site-packages/openandroidinstaller/openandroidinstaller.py -l ~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/"
+						"python3 /app/lib/python3.11/site-packages/openandroidinstaller/openandroidinstaller.py -l /var/data"
 					],
 					"dest-filename": "openandroidinstaller.sh"
 				},
