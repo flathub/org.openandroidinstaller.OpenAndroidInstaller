@@ -36,6 +36,22 @@
   </screenshots>
 
   <releases>
+    <release version="v0.5.5-beta" date="2025-07-01" urgency="medium">
+      <description>
+        <p>This release v0.5.5-beta adds:</p>
+        <p>New devices:</p>
+        <ul>
+            <li>support for Motorola moto g5s (montana) (thanks to @SirRGB)</li>
+            <li>support for Motorola moto g5 plus (potter) (Thanks to @SirRGB)</li>
+        </ul>
+        <p>Fixes:</p>
+        <ul>
+            <li>nice transparent pictures!</li>
+            <li>remove recommendations of old drivers</li>
+        </ul>
+      </description>
+      <url>https://github.com/openandroidinstaller-dev/openandroidinstaller/releases/tag/v0.5.5-beta</url>
+    </release>
     <release version="v0.5.4-beta.1" date="2025-02-19" urgency="medium">
       <description>
         <p>This release v0.5.4-beta.1 adds:</p>

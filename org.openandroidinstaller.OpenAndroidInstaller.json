@@ -140,7 +140,7 @@
 				{
 					"type": "script",
 					"commands": [
-						"python3 /app/lib/python3.11/site-packages/openandroidinstaller/openandroidinstaller.py -l ~/.var/app/org.openandroidinstaller.OpenAndroidInstaller/data/"
+						"python3 /app/lib/python3.11/site-packages/openandroidinstaller/openandroidinstaller.py -l /var/data"
 					],
 					"dest-filename": "openandroidinstaller.sh"
 				},
@@ -160,6 +160,7 @@
 			"build-commands": [
 				"mkdir -p /app/{bin,share/{appdata,applications,icons/hicolor/512x512/apps}}",
 				"pip3 install --prefix=/app --no-deps --find-links=\"file://${PWD}\" --no-index poetry-core==1.9.0 .",
+                "pip3 install --prefix=/app --no-deps 'flet[all]==0.26.0'",
 				"mkdir -p /app/lib/python3.11/site-packages/openandroidinstaller/bin",
 				"install -Dm755 openandroidinstaller.sh /app/bin/openandroidinstaller",
 				"install -Dm755 ${FLATPAK_ID}.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png",
