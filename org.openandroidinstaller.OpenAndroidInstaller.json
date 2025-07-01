@@ -93,6 +93,34 @@
 				}
 			]
 		},
+		{
+			"name": "flet-desktop",
+			"buildsystem": "simple",
+			"build-commands": [
+				"pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"flet-desktop\" --no-build-isolation"
+			],
+			"sources": [
+				{
+					"type": "file",
+					"url": "https://files.pythonhosted.org/packages/49/be/53267da6f6ab38e688464e14ffc6f0b04b398c4f678703f4cd49e5e4f153/flet_desktop-0.26.0-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+					"sha256": "e6e0cb855761bd23ab1e7fffbba532f588909224ab43c9ab1794a2a29818dbce"
+				}
+			]
+		},
+		{
+			"name": "flet-web",
+			"buildsystem": "simple",
+			"build-commands": [
+				"pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"flet-web\" --no-build-isolation"
+			],
+			"sources": [
+				{
+					"type": "file",
+					"url": "https://files.pythonhosted.org/packages/a4/17/b870629da8384b91d0531e7cbc4be4adf6062c0e0b6b826f21b2693f0352/flet_web-0.26.0-py3-none-any.whl",
+					"sha256": "d29865ab0136c71d164b08628e86222a1c3c38fd9158e44065344a7d569ba8ae"
+				}
+			]
+		},
 		"shared-modules/libusb/libusb.json",
 		{
 			"name": "android-tools",
