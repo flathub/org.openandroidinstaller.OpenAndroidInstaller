@@ -93,20 +93,6 @@
 				}
 			]
 		},
-		{
-			"name": "flet-desktop",
-			"buildsystem": "simple",
-			"build-commands": [
-				"pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"flet-desktop\" --no-build-isolation"
-			],
-			"sources": [
-				{
-					"type": "file",
-					"url": "https://files.pythonhosted.org/packages/49/be/53267da6f6ab38e688464e14ffc6f0b04b398c4f678703f4cd49e5e4f153/flet_desktop-0.26.0-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
-					"sha256": "e6e0cb855761bd23ab1e7fffbba532f588909224ab43c9ab1794a2a29818dbce"
-				}
-			]
-		},
 		"shared-modules/libusb/libusb.json",
 		{
 			"name": "android-tools",
@@ -174,6 +160,7 @@
 			"build-commands": [
 				"mkdir -p /app/{bin,share/{appdata,applications,icons/hicolor/512x512/apps}}",
 				"pip3 install --prefix=/app --no-deps --find-links=\"file://${PWD}\" --no-index poetry-core==1.9.0 .",
+                "pip3 install --prefix=/app --no-deps 'flet[all]==0.26.0'",
 				"mkdir -p /app/lib/python3.11/site-packages/openandroidinstaller/bin",
 				"install -Dm755 openandroidinstaller.sh /app/bin/openandroidinstaller",
 				"install -Dm755 ${FLATPAK_ID}.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png",
