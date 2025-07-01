@@ -107,20 +107,6 @@
 				}
 			]
 		},
-		{
-			"name": "flet-web",
-			"buildsystem": "simple",
-			"build-commands": [
-				"pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"flet-web\" --no-build-isolation"
-			],
-			"sources": [
-				{
-					"type": "file",
-					"url": "https://files.pythonhosted.org/packages/a4/17/b870629da8384b91d0531e7cbc4be4adf6062c0e0b6b826f21b2693f0352/flet_web-0.26.0-py3-none-any.whl",
-					"sha256": "d29865ab0136c71d164b08628e86222a1c3c38fd9158e44065344a7d569ba8ae"
-				}
-			]
-		},
 		"shared-modules/libusb/libusb.json",
 		{
 			"name": "android-tools",
